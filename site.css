@@ -1,0 +1,383 @@
+header {
+  background-color: green;
+  color: #eee;
+  background-image: url("imgs/hand-grips-a-gardening-tool-to-cut-back-a-plant.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-row: 1;
+  grid-column: span 2;
+}
+
+div {
+  font-family: Arial, serif;
+}
+
+body {
+  font-family: Arial, "Gabriola", sans-serif;
+  margin: 0;
+}
+
+main {
+  border-left: 5px solid rgb(158, 194, 143);
+}
+
+h1 {
+  font-family: Arial, serif;
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 400%;
+  text-align: center;
+  margin: 0;
+  background-color: green;
+  opacity: 0.5;
+  text-shadow: 2px 2px 10px white;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #eee;
+}
+
+h1 a:hover {
+  text-shadow: 2px 2px 10px white;
+}
+
+h2 {
+  font-family: Arial, "Gabriola", sans-serif;
+  font-size: 2em;
+  color: green;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: Arial, "Gabriola", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.item33 {
+  width: 33%;
+}
+
+.item25 {
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+}
+
+
+
+.icon {
+  display: block;
+  font-size: 3em;
+  color: rgb(35, 102, 12);
+}
+
+footer {
+  font-family: Arial, serif;
+  font-size: smaller;
+  background-color: green;
+  color: #eee;
+  text-decoration-color: #eee;
+  padding: 10px 10%;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10%;
+}
+
+footer > div {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+footer nav a {
+  color: #eee;
+  display: block;
+  padding: 0%;
+  text-align: left;
+}
+
+#copyright {
+  clear: both;
+  font-family: serif;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  text-align: center;
+  text-decoration: white;
+  /* Removed float property */
+  padding: 10px 40px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 40px;
+}
+
+nav a:hover {
+  text-shadow: 0px 0px 1px rgb(20, 70, 20);
+}
+
+#wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+#heroimg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#categories {
+  margin: 40px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+#categories img {
+  width: 100%;
+}
+
+#categories section:nth-of-type(3) {
+  grid-row: 1 / 3;
+}
+
+#pagecontainer {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: auto;
+    grid-template-areas:
+      "header header"
+      "nav main"
+      "footer footer";
+}
+
+header, footer {
+  grid-column: 1 / -1;
+}
+
+
+
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10%;
+}
+
+footer > div {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+#copyright {
+  width: 100%;
+}
+
+
+#multicol {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item25 {
+  width: 23%;
+  box-shadow: 0px 0px 20px #eee;
+}
+
+
+#categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+#categories img {
+  width: 100%;
+}
+
+#categories section:nth-of-type(3) {
+  grid-row: 1 / 3;
+}
+
+
+.garden {
+  display: flex;
+    flex: 1;
+    gap: 1.5em;
+}
+
+.garden1 {
+  background-color: rgb(12, 102, 48);
+  color: white;
+  padding: 20px;
+}
+
+/*changes of assignment 4*/
+
+* {
+  box-sizing: border-box;
+}
+
+table {
+  width: 70%;
+  margin: auto;
+}
+
+table th {
+  color: #eee;
+  background-color: green;
+}
+
+table tr:nth-child(even) td {
+  background-color:  rgb(35, 102, 12); 
+}
+
+table th, table td {
+  padding: 5px;
+  text-align: center;
+}
+
+th, table caption, form label {
+  font-family: Arial, "Gabriola", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+table caption {
+  font-weight: 600;
+}
+
+form {
+  width: 70%;
+  margin: auto;
+  box-shadow: 0px 0px 2px #bbb;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 150px auto;
+  gap: 15px;
+}
+
+label + * {
+  margin-bottom: 15px;
+}
+
+input[type=submit] {
+  justify-self: start;
+}
+
+/* Tablet View */
+@media (max-width: 1023px) {
+  #pagecontainer{
+    display: block;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+nav ul li {
+    display: inline-block;
+}
+footer nav ul li {
+    display: block;
+}
+h1 {
+    font-size: 2.5em;
+}
+nav a {
+    padding: 10px 30px;
+}
+#categories section {
+   
+    width: 100%;
+}
+footer nav ul {
+    flex-direction: column;
+  }
+main{
+    border-left: none;
+}
+/*Change the width of <form> and <table> to “90%” */
+form, table {
+  width: 90%;
+}
+
+}
+
+/* Mobile View */
+@media (max-width: 759px) {
+  .desktop {
+    display: none;
+}   
+.mobile {
+    display: block;
+}
+nav {
+    border-bottom: 1px solid purple; 
+}
+nav ul {
+    flex-direction: column;
+  }
+  #multicol {
+    flex-wrap: wrap;
+  }
+  footer > div {
+    width: 100%;
+  }
+.item25 {
+    width: 50%;
+}
+nav ul li {
+    display: block;
+}
+#categories {
+    grid-template-columns: 1fr 1fr;
+  }
+
+.item33 {
+    
+    display: block;
+    padding-left: 40%;
+}
+
+
+.garden{
+  flex-direction: column;
+}
+
+ /* Changing the width of both <form> and <table> to “100%” */
+ form, table {
+  width: 100%;
+}
+
+/*Removing the <form> paddings and turn off its visual border */
+form {
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Turning form into a single-column grid with a column template value: “1fr” */
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/*  Stretching the submit button to the maximum size inside <form> using “justify-self: stretch” */
+input[type=submit] {
+  justify-self: stretch;
+}
+}
+
